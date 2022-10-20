@@ -2,10 +2,12 @@ import java.util.*;
 
 public class PlusGrandValeur {
 
-    //declaration des attributs
-    int[] vals = {};
     //initialisatio de taille de tableau
     final int TAILLE = 15;
+
+    //declaration des attributs
+    int[] vals = {};
+
 
     //constructeur pour remplir le tableau
     PlusGrandValeur(){
@@ -20,6 +22,7 @@ public class PlusGrandValeur {
         }
     }
 
+
     //methode d affichage de max et son index
     public void display(){
 
@@ -28,6 +31,8 @@ public class PlusGrandValeur {
         }
     }
 
+
+    //methode d affichage d index et max de tableau
     public void afficheMaxIndex(){
 
         int max = 0;
@@ -35,11 +40,13 @@ public class PlusGrandValeur {
 
         for(int i = 0; i < TAILLE; i++){
             
+            //determiner le max
             if(vals[i] > max){
                 max = vals[i];
                 index = i + 1;
             }
         }
+        //affichage des resultats
         System.out.println("La plus grad nombre du tableau = " + max);
         System.out.println("Il est a l inndex : " + index);
     }

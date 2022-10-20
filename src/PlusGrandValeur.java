@@ -27,4 +27,16 @@ public class PlusGrandValeur {
             System.out.println(vals[i]);
         }
     }
+
+    public void afficheMax(){
+
+        int max = 0;
+        for(int i = 0; i < TAILLE; i++){
+            
+            if(vals[i] > max){
+                max = vals[i];
+            }
+        }
+        System.out.println("La valeur maximal du tableau = " + max);
+    }
 }

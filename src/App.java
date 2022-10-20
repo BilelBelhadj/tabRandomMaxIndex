@@ -3,5 +3,6 @@ public class App {
         
         PlusGrandValeur tab1 = new PlusGrandValeur();
         tab1.display();
+        tab1.afficheMax();
     }
 }

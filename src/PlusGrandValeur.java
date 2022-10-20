@@ -28,15 +28,19 @@ public class PlusGrandValeur {
         }
     }
 
-    public void afficheMax(){
+    public void afficheMaxIndex(){
 
         int max = 0;
+        int index = -1; //initialisatio de variable d idex a -1 e cas d erreur le programme affiche -1 on connait qu il y a quelque chose qui marche pas
+
         for(int i = 0; i < TAILLE; i++){
             
             if(vals[i] > max){
                 max = vals[i];
+                index = i + 1;
             }
         }
-        System.out.println("La valeur maximal du tableau = " + max);
+        System.out.println("La plus grad nombre du tableau = " + max);
+        System.out.println("Il est a l inndex : " + index);
     }
 }
